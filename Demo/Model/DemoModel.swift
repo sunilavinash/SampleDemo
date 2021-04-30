@@ -2,7 +2,7 @@
 //  ProfileModel.swift
 //  IMA Awards
 //
-//  Created by Murugan on 22/02/20.
+//  Created by MacBookPro on 29/04/21.
 //  Copyright © 2020 WLMACAIR. All rights reserved.
 //
 

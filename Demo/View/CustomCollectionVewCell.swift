@@ -2,7 +2,7 @@
 //  OfferTagCollectionViewCell.swift
 //  Masam
 //
-//  Created by Murugan on 16/04/21.
+//  Created by MacBookPro on 29/04/21.
 //
 
 import UIKit

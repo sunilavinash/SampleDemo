@@ -23,6 +23,7 @@
 		529E07C3263AFCEF00EA1855 /* DemoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529E07C2263AFCEF00EA1855 /* DemoModel.swift */; };
 		529E07C8263AFF6500EA1855 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 529E07C7263AFF6500EA1855 /* data.json */; };
 		529E07CD263B0D4200EA1855 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529E07CC263B0D4200EA1855 /* Protocols.swift */; };
+		529E07D2263BCA0B00EA1855 /* DemoVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529E07D1263BCA0B00EA1855 /* DemoVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		529E07C2263AFCEF00EA1855 /* DemoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoModel.swift; sourceTree = "<group>"; };
 		529E07C7263AFF6500EA1855 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		529E07CC263B0D4200EA1855 /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		529E07D1263BCA0B00EA1855 /* DemoVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 		529E0793263AE82800EA1855 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				529E07D1263BCA0B00EA1855 /* DemoVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -338,6 +341,7 @@
 				529E07C3263AFCEF00EA1855 /* DemoModel.swift in Sources */,
 				529E07A2263AE9EC00EA1855 /* CustomCollectionVewCell.swift in Sources */,
 				529E07A3263AE9EC00EA1855 /* CustomTableViewCell.swift in Sources */,
+				529E07D2263BCA0B00EA1855 /* DemoVM.swift in Sources */,
 				529E0764263AE79600EA1855 /* ViewController.swift in Sources */,
 				529E0760263AE79600EA1855 /* AppDelegate.swift in Sources */,
 				529E07CD263B0D4200EA1855 /* Protocols.swift in Sources */,

@@ -10,13 +10,20 @@ import UIKit
 var data:DemoModel!
 class ViewController: UIViewController {
     @IBOutlet var customTableView: UITableView!
-
+    var data:DemoModel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        data = DemoModel.convertData()
         
         viesSetup()
+        initializeViewModel()
         // Do any additional setup after loading the view.
+    }
+    func initializeViewModel(){
+        DemoVM.sharedInstance.getDataForHome()
+        DemoVM.sharedInstance.dataSuccess = { [self] (dataAvailable) in
+            self.data = dataAvailable
+            self.customTableView.reloadData()
+        }
     }
     func viesSetup(){
         customTableView.register(UINib(nibName: "CustomTableViewCell", bundle: nil), forCellReuseIdentifier: "CustomTableViewCell")
@@ -26,7 +33,10 @@ class ViewController: UIViewController {
 
 extension ViewController:UITableViewDelegate,UITableViewDataSource{
     func numberOfSections(in tableView: UITableView) -> Int {
-        return data.sectionData.count
+        if let datItem = data{
+            return datItem.sectionData.count
+        }
+        return 0
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
