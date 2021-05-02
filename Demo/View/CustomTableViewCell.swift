@@ -16,6 +16,7 @@ class CustomTableViewCell: UITableViewCell {
     var sectionData:SectionModel!
     var selectedDelegate :SelectionDelegate!
     var sectionIndex:Int!
+    var data:DemoModel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -28,6 +29,7 @@ class CustomTableViewCell: UITableViewCell {
     }
     
     func setupUI(data:DemoModel!,sectionIndex:Int,selectedDelegate :SelectionDelegate){
+        self.data = data
         self.sectionIndex = sectionIndex
         self.sectionData = data.sectionData[sectionIndex]
         self.selectedDelegate = selectedDelegate

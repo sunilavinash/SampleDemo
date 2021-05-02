@@ -12,3 +12,7 @@ import UIKit
 protocol SelectionDelegate {
     func selectedRowItem(updatedModel: DemoModel)
 }
+
+protocol DemoveDataDelegate {
+    func dataDidLoad(data: DemoModel)
+}

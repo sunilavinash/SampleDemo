@@ -19,9 +19,12 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     func initializeViewModel(){
-        DemoVM.sharedInstance.getDataForHome()
-        DemoVM.sharedInstance.dataSuccess = { [self] (dataAvailable) in
-            self.data = dataAvailable
+        DemoVM.sharedInstance.getDataForHome(delgate: self)
+        DemoVM.sharedInstance.dataFetchFailed1 = {() in
+            print("hit")
+        }
+        DemoVM.sharedInstance.dataSuccess = {(dataVal) in
+            self.data = dataVal
             self.customTableView.reloadData()
         }
     }
@@ -70,6 +73,13 @@ extension ViewController:UITableViewDelegate,UITableViewDataSource{
 extension ViewController:SelectionDelegate{
     func selectedRowItem(updatedModel:DemoModel) {
         data = updatedModel
+        customTableView.reloadData()
+    }
+}
+
+extension ViewController:DemoveDataDelegate{
+    func dataDidLoad(data: DemoModel) {
+        self.data = data
         customTableView.reloadData()
     }
 }
