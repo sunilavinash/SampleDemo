@@ -17,6 +17,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bnU-vg-5eX">
+                                <rect key="frame" x="50.5" y="354" width="313" height="188"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="313" id="Nep-nb-kXq"/>
+                                    <constraint firstAttribute="height" constant="188" id="dff-CI-ecF"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VZF-tG-tGn">
                                 <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <subviews>
@@ -43,6 +51,8 @@
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="VZF-tG-tGn" secondAttribute="bottom" id="145-bQ-r0m"/>
                             <constraint firstItem="VZF-tG-tGn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BpT-K7-8rZ"/>
+                            <constraint firstItem="bnU-vg-5eX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NPJ-0c-N0I"/>
+                            <constraint firstItem="bnU-vg-5eX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="OFb-Kl-2Ja"/>
                             <constraint firstItem="VZF-tG-tGn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Ovg-TK-L49"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VZF-tG-tGn" secondAttribute="trailing" id="i1e-9B-uGn"/>
                         </constraints>
